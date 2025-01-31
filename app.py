@@ -32,10 +32,12 @@ if __name__ == "__main__":
     if continueApp == "y":
         while continueApp == "y":
             userID = int(input("Geben sie ihre id ein:  "))
-            respName = users.getUsername(userID, 1)
-            respNumber = users.getNumber(userID, 2)
-            print(respName + " --> " + respNumber)
-            continueApp = input("Wollen Sie weitermachen? [y/n]:")
+            if userID == users.getLength:
+                respName = users.getUsername(userID, 1)
+                respNumber = users.getNumber(userID, 2)
+                print(respName + " --> " + respNum1ber)
+                continueApp = input("Wollen Sie weitermachen? [y/n]:")
+            else: print(endString)
         else:
             print(endString)
     else:

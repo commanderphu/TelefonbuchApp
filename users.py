@@ -13,6 +13,9 @@ Users = [
  [1, "Crankphoenix", "9876543210"],
 ]
 
+def getLength (i):
+    length = len(Users[i])
+    return length
 
 def getUsername (i,u):
     name = Users[i][u]
